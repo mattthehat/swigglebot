@@ -2,14 +2,32 @@ body{
    display: flex;
    justify-content: center;
    align-items: center;
-   height: 100vh;;
+   height: 100vh;
+   background: url(https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 .container{
-   border:1px solid #666;
-   width:50vw;
-   height: 50vw;
+   width:400px;
+   height:400px;
    position: relative;
+
+   &--spin{
+      animation: spin 10000ms infinite;
+   }
+
+   &--talk  .bottom-body__mouth{
+      animation: talk 800ms infinite;
+   }
+
+   &--wave .hand{
+      animation: wave 2s infinite;
+   }
+
+   &--shake {
+      animation: shake 100ms infinite;
+   }
 }
 
 .top-body{
@@ -141,7 +159,6 @@ body{
       position: absolute;
       top:62%;
       left:40%;
-      animation: chat 800ms infinite;
    }
 
 }
@@ -212,7 +229,7 @@ body{
    }
 }
 
-@keyframes chat {
+@keyframes talk {
    0%{
       height: 0;
    }
@@ -223,6 +240,46 @@ body{
       height: 0;
    }
 }
+
+@keyframes spin{
+   0%{
+      transform: rotate(0deg);
+   }
+   100%{
+      transform: rotate(360deg);
+   }
+}
+
+@keyframes wave{
+   0%{
+      transform: rotate(0deg);
+   }
+   25%{
+      transform: rotate(45deg);
+   }
+   50%{
+      transform: rotate(-45deg);
+   }
+   100%{
+      transform: rotate(0deg);
+   }
+}
+
+@keyframes shake{
+   0%{
+      transform: translateX(0px)
+   }
+   30%{
+      transform: translateX(-20px)
+   }
+   60%{
+      transform: translateX(20px)
+   }
+   100%{
+      transform: translateX(0px)
+   }
+}
+
 
 
 

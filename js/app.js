@@ -1,7 +1,7 @@
 const container = document.querySelector('.container');
-const ids = ['spin','shake', 'talk', 'wave'];
+const animations = ['spin','shake', 'talk', 'wave'];
 
-const idBtns = ids.map(btn => {
+const idBtns = animations.map(btn => {
    btns = document.getElementById(btn);
    return btns;
 });

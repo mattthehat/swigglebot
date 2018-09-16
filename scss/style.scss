@@ -1,0 +1,228 @@
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;;
+}
+
+.container{
+   border:1px solid #666;
+   width:50vw;
+   height: 50vw;
+   position: relative;
+}
+
+.top-body{
+
+   &__body{
+      width:50%;
+      height: 50%;
+      position: absolute;
+      top:25%;
+      left:25%;
+
+
+      &__image{
+      }
+   }
+
+   &__crown{
+      width:26.8%;
+      height: 8%;
+      background: #b6b6b6;
+      position: absolute;
+      border-radius: 50%;
+      top:24.8%;
+      left:36.7%;
+      z-index: 99;
+   }
+
+   &__eyebrows{
+      width:16%;
+      height: 8%;
+      position: absolute;
+      top:35%;
+      left:40%;
+      z-index: 99;
+
+      &--left{
+         width:55%;
+         height: 100%;
+         border-radius: 50%;
+         position: absolute;
+         border-top: 5px solid #000;
+      }
+
+      &--right{
+         width:55%;
+         height: 100%;
+         border-radius: 50%;
+         position: absolute;
+         left:65%;
+         border-top: 5px solid #000;
+      }
+
+   }
+
+   &__nose{
+      width:3%;
+      height: 3%;
+      border-radius: 50%;
+      border-bottom: 5px solid #000;
+      position: absolute;
+      top:50%;
+      left:48%;
+      z-index: 9999;
+
+   }
+
+   &__eyes{
+      width:15%;
+      height: 8%;
+      position: absolute;
+      top:40%;
+      left:40%;
+      z-index: 999;
+
+      &--left{
+         width:55%;
+         height: 100%;
+         background-image: radial-gradient(cyan 0%, transparent 20%, #000 40%);
+         border-radius: 50%;
+         position: absolute;
+         border: 5px solid #666;
+      }
+
+      &--right{
+         width:55%;
+         height: 100%;
+         background-image: radial-gradient(cyan 0%, transparent 20%, #000 40%);
+         border-radius: 50%;
+         position: absolute;
+         left:65%;
+         border: 5px solid #666;
+      }
+
+   }
+
+   
+
+}
+
+.bottom-body{
+
+   &__belt{
+      width:31.8%;
+      height: 8%;
+      background-image:linear-gradient(90deg, rgb(244,244,244), rgb(102,102,102));
+      position: absolute;
+      border-radius: 50%;
+      top:51%;
+      left:34.1%;
+      z-index: 999;
+   }
+
+   &__body{
+      width:50%;
+      height: 50%;
+      position: absolute;
+      top:25%;
+      left:25%;
+
+      &__image{
+      }
+   }
+
+   &__mouth{
+      width:20%;
+      height:5%;
+      border-radius: 30%;
+      background: #000;
+      position: absolute;
+      top:62%;
+      left:40%;
+      animation: chat 800ms infinite;
+   }
+
+}
+
+.hand{
+   width:25%;
+   height:25%;
+   position: absolute;
+   top:40%;
+   left:70%;
+
+   &__palm{
+      width:50%;
+      height: 50%;
+      background-image:linear-gradient(90deg, rgb(136,136,136), rgb(36,36,36));
+      position: absolute;
+      top:50%;
+      left:25%;
+      border-radius: 50%;
+      border:2px solid #666;
+   }
+
+   &__thumb{
+      width:10%;
+      height: 25%;
+      background-image:linear-gradient(90deg, rgb(136,136,136), rgb(36,36,36));
+      position: absolute;
+      top:52%;
+      left:5%;
+      border-radius: 25%;
+      border:2px solid #666;
+      transform: rotate(-25deg);
+   }  
+
+   &__finger1{
+      width:10%;
+      height: 25%;
+      background-image:linear-gradient(90deg, rgb(136,136,136), rgb(36,36,36));
+      position: absolute;
+      top:20%;
+      left:25%;
+      border-radius: 25%;
+      border:2px solid #666;
+      transform: rotate(-15deg);
+   }
+
+   &__finger2{
+      width:10%;
+      height: 25%;
+      background-image:linear-gradient(90deg, rgb(136,136,136), rgb(36,36,36));
+      position: absolute;
+      top:18%;
+      left:45%;
+      border-radius: 25%;
+      border:2px solid #666;
+   }
+
+   &__finger3{
+      width:10%;
+      height: 25%;
+      background-image:linear-gradient(90deg, rgb(136,136,136), rgb(36,36,36));
+      position: absolute;
+      top:20%;
+      left:65%;
+      border-radius: 25%;
+      border:2px solid #666;
+      transform: rotate(15deg);
+   }
+}
+
+@keyframes chat {
+   0%{
+      height: 0;
+   }
+   50%{
+      height: 5%;
+   }
+   100%{
+      height: 0;
+   }
+}
+
+
+

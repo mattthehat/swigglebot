@@ -8,7 +8,7 @@ const idBtns = ids.map(btn => {
 
 idBtns.forEach((idBtn) => {
    idBtn.addEventListener('click',() => {
-      container.classList.toggle('container--'+ idBtn.computedName.toLowerCase());
+      container.classList.toggle('container--'+ idBtn.id.toLowerCase());
    })
 });
 
